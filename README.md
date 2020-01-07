@@ -10,4 +10,7 @@
 
 # docker build --non-cache, explore docker swarm for A/B updating.
 
-
+```
+docker build --build-arg BRANCH=develop . -t rlaw
+docker run -p 8080:3000 -d --name rlaw rlaw
+```
